@@ -66,9 +66,9 @@ const CartDetails = () => {
         countquantity()
     },[countquantity]);
 
-    // payment integration
+    // Stripe payment integration
     const makePayment = async()=>{
-        const stripe = await loadStripe("ENTER YOUR PUBLISHABLE KEY");
+        const stripe = await loadStripe("pk_test_51ObT8LSEymnlAul7gvrxquXLej63BZo4vZHNKE8ngudglMQS67CQNktAguIUiPxhTAYcUkfsLtLdtl1mk1Wr8qIp00bzmlnLV5");
 
         const body = {
             products:carts
